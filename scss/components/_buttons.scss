@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+
+    &--white {
+        border: 0.6px solid $pink;
+        box-shadow: 0px 0px 5px hsla(322, 100%, 66%, 0.22);
+        color: $pink;
+    }
+
+    &--sm {
+        border-radius: 11.76px;
+        padding: toRem(2.29) toRem(18.76) toRem(8.24) toRem(18.24);
+    }
+}

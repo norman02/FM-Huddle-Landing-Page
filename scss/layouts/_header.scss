@@ -1,0 +1,13 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: toRem(28) 6.4vw;
+
+    .logo {
+        background-image: url('../images/logo.svg');
+        background-size: contain;
+        height: toRem(16);
+        width: toRem(96);
+    }
+}
