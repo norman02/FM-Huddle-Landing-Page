@@ -8,28 +8,4 @@
 
 @import 'layouts/header';
 
-.home {
-    text-align: center;
-
-    &--one {
-        margin: 0 12.53vw;
-
-        h1 {
-            margin-top: toRem(112.47);
-        }
-
-        p{
-            margin-bottom: toRem(50);
-            margin-top: toRem(27);
-        }
-
-        .img-cont {
-            background-image: url('../images/screen-mockups.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 209px;
-            margin: toRem(104) auto 0 auto;
-            width: 296px;
-        }
-    }
-}
+@import 'pages/home';

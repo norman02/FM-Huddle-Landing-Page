@@ -129,12 +129,9 @@ header .logo {
   width: 6rem;
 }
 
-.home {
-  text-align: center;
-}
-
 .home--one {
   margin: 0 12.53vw;
+  text-align: center;
 }
 
 .home--one h1 {
@@ -153,5 +150,134 @@ header .logo {
   height: 209px;
   margin: 6.5rem auto 0 auto;
   width: 296px;
+}
+
+.home--two {
+  margin: 7.825rem 29.33vw 0 29.33vw;
+}
+
+.home--two h2 {
+  font-size: 3.80938rem;
+  line-height: 5.71438rem;
+}
+
+.home--two p {
+  color: #808d99;
+  font-size: 0.9525rem;
+  line-height: 1.42875rem;
+  margin-bottom: 5.84438rem;
+  text-align: center;
+}
+
+.home--three {
+  text-align: center;
+}
+
+.home--three h2,
+.home--three p {
+  margin: 0 7.73vw;
+}
+
+.home--three h2 {
+  margin-top: 2.125rem;
+}
+
+.home--three p {
+  margin-top: 1.5rem;
+}
+
+.home--three .img-cont {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 13.25rem;
+  margin: 0 auto;
+  width: 16.1875rem;
+}
+
+.home--three--A {
+  background-color: #f5faff;
+  padding: 6.25rem 0;
+  position: relative;
+}
+
+.home--three--A .img-cont {
+  background-image: url("../images/illustration-grow-together.svg");
+}
+
+.home--three--A::before {
+  content: "";
+  background-image: url("../images/bg-section-top-mobile-1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -29.33vw;
+  width: 100%;
+}
+
+.home--three--A::after {
+  content: "";
+  background-image: url("../images/bg-section-bottom-mobile-1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: -13.33vw;
+  width: 100%;
+}
+
+.home--three--B .img-cont {
+  background-image: url("../images/illustration-flowing-conversation.svg");
+  margin-top: 13.28125rem;
+}
+
+.home--three--C {
+  background-color: #f5faff;
+  margin-top: 14.1875rem;
+  margin-bottom: 14.1875rem;
+  padding: 6.25rem 0;
+  position: relative;
+}
+
+.home--three--C .img-cont {
+  background-image: url("../images/illustration-your-users.svg");
+}
+
+.home--three--C::before {
+  background-image: url("../images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -26.67vw;
+  width: 100%;
+}
+
+.home--three--C::after {
+  background-image: url("../images/bg-section-bottom-mobile-2.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: -26.67vw;
+  width: 100%;
+}
+
+.home--four {
+  margin: 0 19.2vw;
+  text-align: center;
+}
+
+.home--four h2 {
+  margin-bottom: 2.6875rem;
 }
 /*# sourceMappingURL=main.css.map */
