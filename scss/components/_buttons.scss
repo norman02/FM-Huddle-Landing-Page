@@ -1,6 +1,9 @@
 .btn {
     display: inline-block;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: toRem(12);
+    line-height: toRem(18);
 
     &--white {
         border: 0.6px solid $pink;
@@ -11,5 +14,17 @@
     &--sm {
         border-radius: 11.76px;
         padding: toRem(2.29) toRem(18.76) toRem(8.24) toRem(18.24);
+    }
+
+    &--pink {
+        background: hsla(322, 100%, 66%, 1) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 7px hsla(192, 100%, 9%, 0.22);
+        border-radius: 20px;
+        color: white;
+        opacity: 1;
+    }
+
+    &--lg{
+        padding: toRem(12) toRem(40);
     }
 }

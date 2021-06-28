@@ -87,6 +87,9 @@ p {
 .btn {
   display: inline-block;
   cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
 }
 
 .btn--white {
@@ -98,6 +101,18 @@ p {
 .btn--sm {
   border-radius: 11.76px;
   padding: 0.14313rem 1.1725rem 0.515rem 1.14rem;
+}
+
+.btn--pink {
+  background: #ff52bf 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 7px rgba(0, 37, 46, 0.22);
+  border-radius: 20px;
+  color: white;
+  opacity: 1;
+}
+
+.btn--lg {
+  padding: 0.75rem 2.5rem;
 }
 
 header {
@@ -112,5 +127,31 @@ header .logo {
   background-size: contain;
   height: 1rem;
   width: 6rem;
+}
+
+.home {
+  text-align: center;
+}
+
+.home--one {
+  margin: 0 12.53vw;
+}
+
+.home--one h1 {
+  margin-top: 7.02937rem;
+}
+
+.home--one p {
+  margin-bottom: 3.125rem;
+  margin-top: 1.6875rem;
+}
+
+.home--one .img-cont {
+  background-image: url("../images/screen-mockups.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 209px;
+  margin: 6.5rem auto 0 auto;
+  width: 296px;
 }
 /*# sourceMappingURL=main.css.map */
