@@ -1,0 +1,86 @@
+.foot {
+    background-color: $very-dark-cyan;
+    color: white;
+    margin-top: toRem(251);
+    padding-bottom: toRem(45);
+    padding-top: toRem(100);
+    position: relative;
+
+    .cont {
+        margin: 0 7.2vw;
+    }
+
+    .icon {
+        width: 23px;
+    }
+
+    &--one {
+        margin-top: toRem(100);
+
+        p {
+            margin-top: toRem(17);
+        }
+
+        form {
+            margin-top: toRem(61);
+            text-align: right;
+
+            textarea {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border-radius: 6px;
+                height: toRem(48);
+                margin-bottom: toRem(16);
+                opacity: 1;
+                resize: none;
+                width: 100%;
+            }
+        }
+    }
+
+    &--two {
+        padding-top: toRem(104);
+
+        textarea {
+            height: toRem(32);
+            resize: none;
+            width: toRem(200);
+        }
+
+        p {
+           margin-top: toRem(16); 
+        }
+
+        .contact {
+            margin-top: toRem(41);
+
+            img {
+                margin-right: toRem(19);
+                margin-bottom: toRem(-11);
+            }
+
+            li {
+                margin-bottom: toRem(21);
+            }
+        }
+
+        .social {
+            margin-top: toRem(48);
+
+            li {
+                display: inline;
+                margin-right: toRem(17.33);
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        background-image: url('../images/bg-footer-top-mobile.svg');
+        background-repeat: no-repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: -13.33vw;
+        width: 100%;
+    }
+}

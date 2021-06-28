@@ -27,4 +27,16 @@
     &--lg{
         padding: toRem(12) toRem(40);
     }
+
+    &--sub {
+        font-size: toRem(16);
+        background: #FF52C1 0% 0% no-repeat padding-box;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: 700;
+        line-height: toRem(24);
+        opacity: 1;
+        padding: toRem(13) toRem(42);
+    }
 }

@@ -78,6 +78,8 @@ h2 {
   line-height: 1.875rem;
 }
 
+a,
+li,
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem;
@@ -115,6 +117,18 @@ p {
   padding: 0.75rem 2.5rem;
 }
 
+.btn--sub {
+  font-size: 1rem;
+  background: #FF52C1 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  line-height: 1.5rem;
+  opacity: 1;
+  padding: 0.8125rem 2.625rem;
+}
+
 header {
   align-items: center;
   display: flex;
@@ -127,6 +141,93 @@ header .logo {
   background-size: contain;
   height: 1rem;
   width: 6rem;
+}
+
+.foot {
+  background-color: #00252e;
+  color: white;
+  margin-top: 15.6875rem;
+  padding-bottom: 2.8125rem;
+  padding-top: 6.25rem;
+  position: relative;
+}
+
+.foot .cont {
+  margin: 0 7.2vw;
+}
+
+.foot .icon {
+  width: 23px;
+}
+
+.foot--one {
+  margin-top: 6.25rem;
+}
+
+.foot--one p {
+  margin-top: 1.0625rem;
+}
+
+.foot--one form {
+  margin-top: 3.8125rem;
+  text-align: right;
+}
+
+.foot--one form textarea {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  height: 3rem;
+  margin-bottom: 1rem;
+  opacity: 1;
+  resize: none;
+  width: 100%;
+}
+
+.foot--two {
+  padding-top: 6.5rem;
+}
+
+.foot--two textarea {
+  height: 2rem;
+  resize: none;
+  width: 12.5rem;
+}
+
+.foot--two p {
+  margin-top: 1rem;
+}
+
+.foot--two .contact {
+  margin-top: 2.5625rem;
+}
+
+.foot--two .contact img {
+  margin-right: 1.1875rem;
+  margin-bottom: -0.6875rem;
+}
+
+.foot--two .contact li {
+  margin-bottom: 1.3125rem;
+}
+
+.foot--two .social {
+  margin-top: 3rem;
+}
+
+.foot--two .social li {
+  display: inline;
+  margin-right: 1.08312rem;
+}
+
+.foot::before {
+  content: "";
+  background-image: url("../images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -13.33vw;
+  width: 100%;
 }
 
 .home--one {
