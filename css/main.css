@@ -73,9 +73,37 @@ h1 {
   line-height: 2.25rem;
 }
 
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+  }
+}
+
 h2 {
   font-size: 1.25rem;
   line-height: 1.875rem;
+}
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+  }
 }
 
 a,
@@ -84,6 +112,24 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875rem;
   line-height: 1.3125rem;
+}
+
+@media screen and (min-width: 500px) {
+  a,
+  li,
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  a,
+  li,
+  p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 }
 
 .btn {
