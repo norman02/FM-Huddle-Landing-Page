@@ -223,6 +223,7 @@ header .logo {
   content: "";
   background-image: url("../images/bg-footer-top-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   height: 100%;
   left: 0;
   position: absolute;
