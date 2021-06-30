@@ -94,14 +94,26 @@
        h2,
        p {
           margin: 0 7.73vw; 
+
+          @include media-lg {
+              margin: 0;
+          }
        }
 
        h2 {
            margin-top: toRem(34);
+
+           @include media-lg {
+               margin: 0;
+           }
        }
 
        p {
            margin-top: toRem(24);
+
+           @include media-lg {
+               margin-top: toRem(41);
+           }
        }
 
        .img-cont {   
@@ -113,39 +125,48 @@
 
            @include media-lg {
                height: toRem(423.11);
-               width: toRem(517.22);
+               margin: 0%;
+               width: toRem(520);
            }
+       }
+
+       .txt-cont {
+
+        @include media-lg {
+            width: toRem(520)
+        }
+           
+       }
+
+       .cont {
+
+        padding: toRem(100) 0;
+
+        @include media-lg {
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+        }
        }
 
 
 
        &--A {
-
         background-color: hsla(207, 100%, 98%, 1);
-        padding: toRem(100) 0;
         position: relative;
 
         @include media-lg {
-            display: grid;
-            grid-template-areas: 'img txt';
-            grid-template-columns: auto auto;
+            
+            flex-direction: row-reverse;
             
         }
-           
+
+        
+       
 
         .img-cont {
-            background-image: url('../images/illustration-grow-together.svg');
-
-            @include media-lg {
-                grid-area: img;
-            }
-            
-        }
-
-        .txt-cont {
-            @include media-lg {
-                grid-area: txt;
-            }
+            background-image: url('../images/illustration-grow-together.svg');    
         }
 
         &::before {
@@ -159,6 +180,11 @@
             position: absolute;
             top: -29.33vw;
             width: 100%;
+
+            @include media-lg {
+                background-image: url('../images/bg-section-top-desktop-1.svg');
+                top: -10.38vw;
+            }
             
         }
 
@@ -174,14 +200,26 @@
             position: absolute;
             bottom: -13.33vw;
             width: 100%;
+
+            @include media-lg {
+                background-image: url('../images/bg-section-bottom-desktop-1.svg');
+                bottom: -9vw;
+            }
         }
 
        }
 
        &--B {
+
+            margin-top: toRem(212.5);
+
+            @include media-lg{
+                margin-top: toRem(194.84);
+            }
+            
            .img-cont {
                background-image: url('../images/illustration-flowing-conversation.svg');
-               margin-top: toRem(212.5);
+               
            }
        }
 
@@ -189,10 +227,14 @@
             background-color: hsla(207, 100%, 98%, 1);
             margin-top: toRem(227);
             margin-bottom: toRem(227);
-            padding: toRem(100) 0;
             position: relative;
             .img-cont {
                 background-image: url('../images/illustration-your-users.svg');
+            }
+
+            @include media-lg{
+                margin-bottom: toRem(325);
+                margin-top: toRem(420);
             }
 
             &::before {
@@ -203,8 +245,12 @@
                 height: 100%;
                 left: 0;
                 position: absolute;
-                top: -26.67vw;
+                top: -10.73vw;
                 width: 100%;
+
+                @include media-lg {
+                    background-image: url('../images/bg-section-top-desktop-2.svg');
+                }
             }
 
             &::after {
@@ -218,6 +264,11 @@
                 position: absolute;
                 bottom: -26.67vw;
                 width: 100%;
+
+                @include media-lg {
+                    background-image: url('../images/bg-section-bottom-desktop-2.svg');
+                    bottom: -9.5vw;
+                }
             }
 
         }

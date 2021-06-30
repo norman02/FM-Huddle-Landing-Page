@@ -431,12 +431,31 @@ header .logo {
   margin: 0 7.73vw;
 }
 
+@media screen and (min-width: 1000px) {
+  .home--three h2,
+  .home--three p {
+    margin: 0;
+  }
+}
+
 .home--three h2 {
   margin-top: 2.125rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .home--three h2 {
+    margin: 0;
+  }
+}
+
 .home--three p {
   margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three p {
+    margin-top: 2.5625rem;
+  }
 }
 
 .home--three .img-cont {
@@ -450,38 +469,43 @@ header .logo {
 @media screen and (min-width: 1000px) {
   .home--three .img-cont {
     height: 26.44438rem;
-    width: 32.32625rem;
+    margin: 0%;
+    width: 32.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three .txt-cont {
+    width: 32.5rem;
+  }
+}
+
+.home--three .cont {
+  padding: 6.25rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three .cont {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
   }
 }
 
 .home--three--A {
   background-color: #f5faff;
-  padding: 6.25rem 0;
   position: relative;
 }
 
 @media screen and (min-width: 1000px) {
   .home--three--A {
-    display: grid;
-    grid-template-areas: 'img txt';
-    grid-template-columns: auto auto;
+    flex-direction: row-reverse;
   }
 }
 
 .home--three--A .img-cont {
   background-image: url("../images/illustration-grow-together.svg");
-}
-
-@media screen and (min-width: 1000px) {
-  .home--three--A .img-cont {
-    grid-area: img;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .home--three--A .txt-cont {
-    grid-area: txt;
-  }
 }
 
 .home--three--A::before {
@@ -497,6 +521,13 @@ header .logo {
   width: 100%;
 }
 
+@media screen and (min-width: 1000px) {
+  .home--three--A::before {
+    background-image: url("../images/bg-section-top-desktop-1.svg");
+    top: -10.38vw;
+  }
+}
+
 .home--three--A::after {
   content: "";
   background-image: url("../images/bg-section-bottom-mobile-1.svg");
@@ -510,21 +541,43 @@ header .logo {
   width: 100%;
 }
 
+@media screen and (min-width: 1000px) {
+  .home--three--A::after {
+    background-image: url("../images/bg-section-bottom-desktop-1.svg");
+    bottom: -9vw;
+  }
+}
+
+.home--three--B {
+  margin-top: 13.28125rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three--B {
+    margin-top: 12.1775rem;
+  }
+}
+
 .home--three--B .img-cont {
   background-image: url("../images/illustration-flowing-conversation.svg");
-  margin-top: 13.28125rem;
 }
 
 .home--three--C {
   background-color: #f5faff;
   margin-top: 14.1875rem;
   margin-bottom: 14.1875rem;
-  padding: 6.25rem 0;
   position: relative;
 }
 
 .home--three--C .img-cont {
   background-image: url("../images/illustration-your-users.svg");
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three--C {
+    margin-bottom: 20.3125rem;
+    margin-top: 26.25rem;
+  }
 }
 
 .home--three--C::before {
@@ -535,8 +588,14 @@ header .logo {
   height: 100%;
   left: 0;
   position: absolute;
-  top: -26.67vw;
+  top: -10.73vw;
   width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three--C::before {
+    background-image: url("../images/bg-section-top-desktop-2.svg");
+  }
 }
 
 .home--three--C::after {
@@ -550,6 +609,13 @@ header .logo {
   position: absolute;
   bottom: -26.67vw;
   width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .home--three--C::after {
+    background-image: url("../images/bg-section-bottom-desktop-2.svg");
+    bottom: -9.5vw;
+  }
 }
 
 .home--four {
