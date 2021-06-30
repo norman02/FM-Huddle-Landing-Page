@@ -21,6 +21,7 @@
         padding: toRem(2.29) toRem(18.76) toRem(8.24) toRem(18.24);
 
         @include media-md {
+            border-radius: 20px;
             padding: toRem(4) toRem(32) toRem(14) toRem(31);
         }
     }
@@ -34,7 +35,15 @@
     }
 
     &--lg{
+        
         padding: toRem(12) toRem(40);
+
+        @include media-lg {
+            border-radius: 40px;
+            font-size: toRem(20);
+            line-height: toRem(30);
+            padding: toRem(25) toRem(100) toRem(28) toRem(100);
+        }
     }
 
     &--sub {

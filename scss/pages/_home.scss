@@ -6,11 +6,19 @@
 
         h1 {
             margin-top: toRem(112.47);
+
+            @include media-lg {
+                margin-top: toRem(213);
+            }
         }
 
         p{
             margin-bottom: toRem(50);
             margin-top: toRem(27);
+
+            @include media-lg {
+                margin: toRem(44) 14.39vw toRem(52) 14.39vw;
+            }
         }
 
         .img-cont {
@@ -20,15 +28,33 @@
             height: 209px;
             margin: toRem(104) auto 0 auto;
             width: 296px;
+
+            @include media-lg {
+                height: 720px;
+                width: 1016px;
+
+            }
         }
     }
 
     &--two {
-        margin: toRem(125.2) 29.33vw 0 29.33vw;
+        margin-top: toRem(125.2);
+
+        @include media-lg {
+            display: flex;
+            margin-top: toRem(120);
+        }
+        
 
         h2 {
             font-size: toRem(60.95);
             line-height: toRem(91.43);
+
+            @include media-lg {
+                font-size: toRem(96);
+                line-height: toRem(144);
+            }
+            
         }
 
         p {
@@ -36,12 +62,34 @@
             font-size: toRem(15.24);
             line-height: toRem(22.86);
             margin-bottom: toRem(93.51);
-            text-align: center;
+
+            @include media-lg {
+                margin-bottom: toRem(244);
+            }
+            
+        }
+
+        .cont {
+            margin: 0 auto;
+            text-align: left;
+            width: toRem(160);
+
+            p {
+                text-align: center;
+            }
+
+            @include media-lg {
+                width: toRem(250);
+            }
         }
     }
 
     &--three {
        text-align: center;
+
+       @include media-lg {
+           text-align: left;
+       }
 
        h2,
        p {
@@ -62,18 +110,42 @@
            height: toRem(212);
            margin: 0 auto;
            width: toRem(259);
+
+           @include media-lg {
+               height: toRem(423.11);
+               width: toRem(517.22);
+           }
        }
+
+
 
        &--A {
 
         background-color: hsla(207, 100%, 98%, 1);
         padding: toRem(100) 0;
         position: relative;
+
+        @include media-lg {
+            display: grid;
+            grid-template-areas: 'img txt';
+            grid-template-columns: auto auto;
+            
+        }
            
 
         .img-cont {
             background-image: url('../images/illustration-grow-together.svg');
+
+            @include media-lg {
+                grid-area: img;
+            }
             
+        }
+
+        .txt-cont {
+            @include media-lg {
+                grid-area: txt;
+            }
         }
 
         &::before {
