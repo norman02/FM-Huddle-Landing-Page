@@ -147,6 +147,19 @@ p {
   }
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:focus {
+  opacity: 0.5;
+  outline: none;
+}
+
 .btn--white {
   border: 0.6px solid #ff52bf;
   box-shadow: 0px 0px 5px rgba(255, 82, 191, 0.22);
