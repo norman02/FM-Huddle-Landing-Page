@@ -365,6 +365,13 @@ header .logo {
   width: 100%;
 }
 
+@media screen and (min-width: 1000px) {
+  .foot::before {
+    background-image: url("../images/bg-footer-top-desktop.svg");
+    top: -10.5vw;
+  }
+}
+
 .home--one {
   margin: 0 12.53vw;
   text-align: center;

@@ -116,5 +116,10 @@
         position: absolute;
         top: -13.33vw;
         width: 100%;
+
+        @include media-lg {
+            background-image: url('../images/bg-footer-top-desktop.svg');
+            top: -10.5vw;
+        }
     }
 }
