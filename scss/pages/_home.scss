@@ -245,11 +245,12 @@
                 height: 100%;
                 left: 0;
                 position: absolute;
-                top: -10.73vw;
+                top: -26.67vw;
                 width: 100%;
 
                 @include media-lg {
                     background-image: url('../images/bg-section-top-desktop-2.svg');
+                    top: -10.73vw;
                 }
             }
 

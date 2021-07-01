@@ -588,13 +588,14 @@ header .logo {
   height: 100%;
   left: 0;
   position: absolute;
-  top: -10.73vw;
+  top: -26.67vw;
   width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
   .home--three--C::before {
     background-image: url("../images/bg-section-top-desktop-2.svg");
+    top: -10.73vw;
   }
 }
 
