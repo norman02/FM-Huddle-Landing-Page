@@ -6,8 +6,20 @@
     padding-top: toRem(100);
     position: relative;
 
+    @include media-lg {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-top: toRem(460);
+    }
+
     .cont {
         margin: 0 7.2vw;
+
+        @include media-lg {
+            margin: 0;
+        }
+
     }
 
     .icon {
@@ -17,6 +29,12 @@
     &--one {
         margin-top: toRem(100);
 
+        @include media-lg {
+            margin: 0;
+
+            width: toRem(520);
+        }
+
         p {
             margin-top: toRem(17);
         }
@@ -24,6 +42,12 @@
         form {
             margin-top: toRem(61);
             text-align: right;
+
+            @include media-lg {
+                display: flex;
+                height: toRem(48);
+                justify-content: space-between;
+            }
 
             textarea {
                 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -33,12 +57,21 @@
                 opacity: 1;
                 resize: none;
                 width: 100%;
+
+                @include media-lg {
+                    width: toRem(320);
+                }
             }
         }
     }
 
     &--two {
         padding-top: toRem(104);
+
+        @include media-lg {
+            padding: 0;
+            width: toRem(340);
+        }
 
         textarea {
             height: toRem(32);

@@ -243,8 +243,23 @@ header .logo {
   position: relative;
 }
 
+@media screen and (min-width: 1000px) {
+  .foot {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 28.75rem;
+  }
+}
+
 .foot .cont {
   margin: 0 7.2vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .foot .cont {
+    margin: 0;
+  }
 }
 
 .foot .icon {
@@ -255,6 +270,13 @@ header .logo {
   margin-top: 6.25rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .foot--one {
+    margin: 0;
+    width: 32.5rem;
+  }
+}
+
 .foot--one p {
   margin-top: 1.0625rem;
 }
@@ -262,6 +284,14 @@ header .logo {
 .foot--one form {
   margin-top: 3.8125rem;
   text-align: right;
+}
+
+@media screen and (min-width: 1000px) {
+  .foot--one form {
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+  }
 }
 
 .foot--one form textarea {
@@ -274,8 +304,21 @@ header .logo {
   width: 100%;
 }
 
+@media screen and (min-width: 1000px) {
+  .foot--one form textarea {
+    width: 20rem;
+  }
+}
+
 .foot--two {
   padding-top: 6.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .foot--two {
+    padding: 0;
+    width: 21.25rem;
+  }
 }
 
 .foot--two textarea {
